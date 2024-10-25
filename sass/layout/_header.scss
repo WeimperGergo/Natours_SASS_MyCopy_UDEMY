@@ -1,0 +1,40 @@
+.header {
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom,
+            hsla(144, 73%, 39%, 0.8),
+            hsla(143, 72%, 38%, 0.799)),
+        url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    &__logo-box {
+        position:absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+    
+    &__logo {
+        height: 35px;
+        /*animation-name: appear_fade_in;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;*/
+        /*animation-iteration-count: 3;*/
+        animation: appear_fade_in $main_animation_time;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+
+
+ 

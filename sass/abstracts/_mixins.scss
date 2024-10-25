@@ -1,0 +1,7 @@
+@mixin clearfix {
+    &::after {
+        content: ""; // If there is no content, the pseudo element will NOT appear
+        display: table; 
+        clear: both; // Clears both floats
+    }
+}
